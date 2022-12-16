@@ -4,7 +4,7 @@ var path = require("path");
 var packageInfo = require(path.join(__dirname, "package.json"));
 var binVersion = packageInfo.version;
 
-var root = "https://github.com/avh4/elm-format/releases/download/" +
+var root = "https://github.com/ildanno/elm-format-installer/releases/download/" +
   binVersion +
   "/elm-format-" +
   binVersion;
@@ -16,6 +16,7 @@ module.exports = binwrap({
     "darwin-x64": root + "-mac-x64.tgz",
     "darwin-arm64": root + "-mac-x64.tgz",
     "linux-x64": root + "-linux-x64.tgz",
+    "linux-arm64": root + "-linux-arm64.tgz",
     "win32-x64": root + "-win-x64.zip"
   }
 });
