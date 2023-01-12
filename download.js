@@ -11,7 +11,7 @@ module.exports = function(callback)
 {
   // figure out URL of binary
   const version = package.version.replace(/^(\d+\.\d+\.\d+).*$/, '$1'); // turn '1.2.3-alpha' into '1.2.3'
-  const baseUrl = "https://github.com/ildanno/elm-format-installer/releases/download/" + version + "/elm-format-" + version;
+  const baseUrl = "https://github.com/primait/elm-format-installer/releases/download/" + version + "/elm-format-" + version;
   const urls = {
     "darwin-x64": baseUrl + "-mac-x64.tgz",
     "darwin-arm64": baseUrl + "-mac-x64.tgz",
